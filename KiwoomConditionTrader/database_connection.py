@@ -57,5 +57,3 @@ class StockDatabase(object):
 
 if __name__ == '__main__':
     db = StockDatabase()
-    # # db.add_stock_order_history('000000', '068270', 1, 60000)
-    print(db.get_all_stock_order_history())
