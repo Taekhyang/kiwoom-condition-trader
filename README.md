@@ -41,7 +41,7 @@
 
 - Python 3,  SQLite
 
-**세부내용**
+**Details**
 
 - We implemented multi-threading as follows: Thread to buy the stock when caught conditional, Thread to check the real-time present price and sell when the upper/lower profit or loss ratio is exceeded, and "Communicate Thread" to handle requests received by each buy/sell Thread.
 - If the buy/sell Thread puts callback queue and data in the command queue, the "Communicate Thread" takes the data value, processes the request, and then returns the value in the callback queue.
