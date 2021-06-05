@@ -23,3 +23,29 @@
 - SQLite 를 사용하여 유저의 매매 기록 관리
 - Python 의 Rotating Filehandler 를 활용한 Debugger 를 구현하여 시간 별 디버깅 관리
 - 키움 API 요청 모듈화 작업
+
+
+## Kiwoom Condition Trader
+
+**2021.01 ~ 2021.02**
+
+**Project Description**
+
+*This is a project that uses the Kiwoom API to implement automatic stock trading.*
+
+*It is a program that catches the conditions registered in Kiwoom HTS conditional formula in real time, buys stocks that meet the conditions, and automatically sells them when the upper/lower profit or loss rate set by the user is exceeded.*
+
+*The project was implemented using Python 3 and tested the program using Kiwoom Mock Investment HTS.*
+
+**Tech Stack**
+
+- Python 3,  SQLite
+
+**세부내용**
+
+- We implemented multi-threading as follows: Thread to buy the stock when caught conditional, Thread to check the real-time present price and sell when the upper/lower profit or loss ratio is exceeded, and "Communicate Thread" to handle requests received by each buy/sell Thread.
+- If the buy/sell Thread puts callback queue and data in the command queue, the "Communicate Thread" takes the data value, processes the request, and then returns the value in the callback queue.
+- Used SQLite to manage sales history for users.
+- Clear chronological log management with Debugger implemented with Python's Rotating Filehandler.
+- Modularized Kiwoom API requests.
+
