@@ -4,7 +4,7 @@
 
 **프로젝트 설명**
 
-*키움 API 를 사용하여 주식 자동 매매를 구현한 프로젝트입니다.*
+*증권사 키움 API 를 사용하여 주식 자동 매매를 구현한 프로젝트입니다.*
 
 *키움* *HTS* *조건식에 등록된 조건을 실시간으로 캐치하여 해당 조건에 맞는 종목을 매수한 뒤*
 
@@ -31,7 +31,7 @@
 
 **Project Description**
 
-*This is a project that uses the Kiwoom API to implement automatic stock trading.*
+*This is a project that uses the Kiwoom(Stock brokage firm) API to implement automatic stock trading.*
 
 *It is a program that catches the conditions registered in Kiwoom HTS conditional formula in real time, buys stocks that meet the conditions, and automatically sells them when the upper/lower profit or loss rate set by the user is exceeded.*
 
